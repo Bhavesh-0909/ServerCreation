@@ -19,3 +19,9 @@ app.post('/api/cars',(req, res)=>{
     res.send('data sended');
 
 })
+
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/serverCreation',{
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+})
